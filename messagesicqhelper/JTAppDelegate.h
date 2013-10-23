@@ -8,8 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface JTAppDelegate : NSObject <NSApplicationDelegate>
+@interface JTAppDelegate : NSObject <NSApplicationDelegate> {
+    NSURL *settingsLocation;
+    NSDictionary *accounts;
+    NSMutableDictionary *settings;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+
+- (IBAction)setAccountSettings:(id)sender;
 
 @end

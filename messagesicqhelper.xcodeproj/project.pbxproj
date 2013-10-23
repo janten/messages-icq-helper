@@ -50,6 +50,7 @@
 		EE710DD51817FFF10025C04A /* messagesicqhelperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "messagesicqhelperTests-Info.plist"; sourceTree = "<group>"; };
 		EE710DD71817FFF10025C04A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EE710DD91817FFF10025C04A /* messagesicqhelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = messagesicqhelperTests.m; sourceTree = "<group>"; };
+		EE710DE31818001E0025C04A /* messagesicqhelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = messagesicqhelper.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +116,7 @@
 		EE710DB51817FFF10025C04A /* messagesicqhelper */ = {
 			isa = PBXGroup;
 			children = (
+				EE710DE31818001E0025C04A /* messagesicqhelper.entitlements */,
 				EE710DC11817FFF10025C04A /* JTAppDelegate.h */,
 				EE710DC21817FFF10025C04A /* JTAppDelegate.m */,
 				EE710DC41817FFF10025C04A /* MainMenu.xib */,
@@ -202,6 +204,14 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jan-Gerd Tenberge";
 				TargetAttributes = {
+					EE710DAB1817FFF00025C04A = {
+						DevelopmentTeam = 7KV498VKRZ;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
 					EE710DCC1817FFF10025C04A = {
 						TestTargetID = EE710DAB1817FFF00025C04A;
 					};
@@ -384,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "messagesicqhelper/messagesicqhelper-Prefix.pch";
@@ -397,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "messagesicqhelper/messagesicqhelper-Prefix.pch";
